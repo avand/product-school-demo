@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/main.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact_us.html">Contact Us</a>
+    </nav>
+
+    <main>
+      <form>
+        <div>
+          <label>
+              Email
+              <input required type="email" name="email" />
+          </label>
+        </div>
+        <div>
+          <label>
+              Image
+              <input type="file" name="inquiry[image]" />
+          </label>
+        </div>
+        <div>
+          <label>
+              Compress Photo?
+              <input type="checkbox" name="inquiry[compress-image]" value="whatever" />
+          </label>
+        </div>
+        <div>
+          <label>
+              Category
+              <select name="inquiry[category]">
+                <option value="1">Compliment</option>
+                <option value="2">Complaint</option>
+                <option value="3">General Inquiry</option>
+              </select>
+          </label>
+        </div>
+        <hr>
+        <div>
+          <input type="submit" value="Submit"/>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
